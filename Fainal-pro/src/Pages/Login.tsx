@@ -11,10 +11,12 @@ function Lpgin() {
         username:"",
         password:''
     })
+
 const hande =(e)=>{
     setuser({...user,[e.target.name]:e.target.value})
 }
-console.log(user.username);
+
+
 
 
 const sub=()=>{
@@ -30,7 +32,7 @@ const sub=()=>{
         .then(json=>console.log(json))
 
 }
-}
+
    
   return (
     <div className='bg-slate-500  h-screen flex justify-center items-center w-screen'>
@@ -45,6 +47,6 @@ const sub=()=>{
         
     </div>
   )
-}
+  }
 
 export default Lpgin
