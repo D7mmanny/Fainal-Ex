@@ -30,7 +30,11 @@ const sub=()=>{
     })
         .then(res=>res.json())
         .then(json=>{
-            console.log(json)
+            console.log(json.id);
+            
+                if(json.id =<10){
+                    nave("/home")
+                }
             
         })
 
